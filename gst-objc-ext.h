@@ -4,7 +4,9 @@
 #import "gst-string.h"
 #import "gst-array.h"
 #import "objc-proxy.h"
-#ifndef GNU_RUNTIME
+#ifdef GNU_RUNTIME
+#import <objc/message.h>
+#else
 #import <objc/objc-runtime.h>
 #endif
 
